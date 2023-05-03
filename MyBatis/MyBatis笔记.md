@@ -9,7 +9,7 @@
 4. MyBatis 是一个 半自动的ORM（Object Relation Mapping）框架
 ## MyBatis下载
 - [MyBatis下载地址](https://github.com/mybatis/mybatis-3)
-- ![](Resources/MyBatis下载.png)
+- ![](imag/MyBatis下载.png)
 ## 和其它持久化层技术对比
 - JDBC  
 	- SQL 夹杂在Java代码中耦合度高，导致硬编码内伤  
@@ -35,7 +35,6 @@
 - 打包方式：jar
 - 引入依赖
 
-~~~xml
 ```xml
 <dependencies>
 	<!-- Mybatis核心 -->
@@ -59,7 +58,7 @@
 		</dependency>
 </dependencies>
 ```
-~~~
+
 ## 创建MyBatis的核心配置文件
 >习惯上命名为`mybatis-config.xml`，这个文件名仅仅只是建议，并非强制要求。将来整合Spring之后，这个配置文件可以省略，所以大家操作时可以直接复制、粘贴。
 >核心配置文件主要用于配置连接数据库的环境以及MyBatis的全局配置信息
@@ -76,7 +75,7 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 			<transactionManager type="JDBC"/>  
 			<dataSource type="POOLED">  
 				<property name="driver" value="com.mysql.cj.jdbc.Driver"/>  
-				<property name="url" value="jdbc:mysql://localhost:3306/MyBatis"/>  
+				<property name="url" value="jdbc:mysql://localhost:3306/mybatis_test"/>  
 				<property name="username" value="root"/>  
 				<property name="password" value="123456"/>  
 			</dataSource>  
@@ -280,10 +279,10 @@ properties、settings、typeAliases、typeHandlers、objectFactory、objectWrapp
     </mappers>
 </configuration>
 ```
-- ![](Resources/mapper接口和mapper映射文件在同一包下.png)
+- ![](imag/mapper接口和mapper映射文件在同一包下.png)
 # 默认的类型别名
-![](Resources/默认的类型别名1.png)
-![](Resources/默认的类型别名2.png)
+![](imag/默认的类型别名1.png)
+![](imag/默认的类型别名2.png)
 # MyBatis的增删改查
 1. 添加
 	```xml
@@ -879,9 +878,9 @@ public void getEmpAndDeptByStepOne() {
 	System.out.println(emp.getEmpName());
 }
 ```
-- 关闭延迟加载，两条SQL语句都运行了![](Resources/延迟加载测试1.png)
+- 关闭延迟加载，两条SQL语句都运行了![](imag/延迟加载测试1.png)
 - 开启延迟加载，只运行获取emp的SQL语句
-![](Resources/延迟加载测试2.png)
+![](imag/延迟加载测试2.png)
 ```java
 @Test
 public void getEmpAndDeptByStepOne() {
@@ -893,7 +892,7 @@ public void getEmpAndDeptByStepOne() {
 	System.out.println(emp.getDept());
 }
 ```
-- 开启后，需要用到查询dept的时候才会调用相应的SQL语句![](Resources/延迟加载测试3.png)
+- 开启后，需要用到查询dept的时候才会调用相应的SQL语句![](imag/延迟加载测试3.png)
 - fetchType：当开启了全局的延迟加载之后，可以通过该属性手动控制延迟加载的效果，fetchType="lazy(延迟加载)|eager(立即加载)"
 
 	```xml
@@ -1009,7 +1008,7 @@ public void getEmpByCondition() {
 	System.out.println(emps);
 }
 ```
-![](Resources/trim测试结果.png)
+![](imag/trim测试结果.png)
 ## choose、when、otherwise
 - `choose、when、otherwise`相当于`if...else if..else`
 - when至少要有一个，otherwise至多只有一个
@@ -1046,7 +1045,7 @@ public void getEmpByChoose() {
 	System.out.println(emps);
 }
 ```
-![](Resources/choose测试结果.png)
+![](imag/choose测试结果.png)
 - 相当于`if a else if b else if c else d`，只会执行其中一个
 ## foreach
 - 属性：  
@@ -1075,7 +1074,7 @@ public void getEmpByChoose() {
 		System.out.println(result);
 	}
 	```
-	![](Resources/foreach测试结果1.png)
+	![](imag/foreach测试结果1.png)
 - 批量添加
 
 	```xml
@@ -1100,7 +1099,7 @@ public void getEmpByChoose() {
 		System.out.println(result);
 	}
 	```
-	![](Resources/foreach测试结果2.png)
+	![](imag/foreach测试结果2.png)
 ## SQL片段
 - sql片段，可以记录一段公共sql片段，在使用的地方通过include标签进行引入
 - 声明sql片段：`<sql>`标签
@@ -1379,18 +1378,18 @@ public void getEmpByChoose() {
 </generatorConfiguration>
 ```
 ### 执行MBG插件的generate目标
-- ![](Resources/执行MBG插件的generate目标.png)
+- ![](imag/执行MBG插件的generate目标.png)
 - 如果出现报错：`Exception getting JDBC Driver`，可能是pom.xml中，数据库驱动配置错误
-	- dependency中的驱动![](Resources/dependency中的驱动.png)
-	- mybatis-generator-maven-plugin插件中的驱动![](Resources/插件中的驱动.png)
+	- dependency中的驱动![](imag/dependency中的驱动.png)
+	- mybatis-generator-maven-plugin插件中的驱动![](imag/插件中的驱动.png)
 	- 两者的驱动版本应该相同
-- 执行结果![](Resources/逆向执行结果.png)
+- 执行结果![](imag/逆向执行结果.png)
 ## QBC
 ### 查询
 - `selectByExample`：按条件查询，需要传入一个example对象或者null；如果传入一个null，则表示没有条件，也就是查询所有数据
 - `example.createCriteria().xxx`：创建条件对象，通过andXXX方法为SQL添加查询添加，每个条件之间是and关系
 - `example.or().xxx`：将之前添加的条件通过or拼接其他条件
-![](Resources/example的方法.png)
+![](imag/example的方法.png)
 ```java
 @Test public void testMBG() throws IOException {
 	InputStream is = Resources.getResourceAsStream("mybatis-config.xml");
@@ -1407,14 +1406,14 @@ public void getEmpByChoose() {
 	emps.forEach(System.out::println);
 }
 ```
-![](Resources/example测试结果.png)
+![](imag/example测试结果.png)
 ### 增改
 - `updateByPrimaryKey`：通过主键进行数据修改，如果某一个值为null，也会将对应的字段改为null
 	- `mapper.updateByPrimaryKey(new Emp(1,"admin",22,null,"456@qq.com",3));`
-	- ![](Resources/增删改测试结果1.png)
+	- ![](imag/增删改测试结果1.png)
 - `updateByPrimaryKeySelective()`：通过主键进行选择性数据修改，如果某个值为null，则不修改这个字段
 	- `mapper.updateByPrimaryKeySelective(new Emp(2,"admin2",22,null,"456@qq.com",3));`
-	- ![](Resources/增删改测试结果2.png)
+	- ![](imag/增删改测试结果2.png)
 # 分页插件
 ## 分页插件使用步骤
 ### 添加依赖
@@ -1428,7 +1427,7 @@ public void getEmpByChoose() {
 ```
 ### 配置分页插件
 - 在MyBatis的核心配置文件（mybatis-config.xml）中配置插件
-- ![](Resources/配置分页插件.png)
+- ![](imag/配置分页插件.png)
 ```xml
 <plugins>
 	<!--设置分页插件-->
@@ -1455,7 +1454,7 @@ public void testPageHelper() throws IOException {
 }
 ```
 
-![](Resources/分页测试结果.png)
+![](imag/分页测试结果.png)
 ### 分页相关数据
 #### 方法一：直接输出
 ```java
