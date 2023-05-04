@@ -3,17 +3,50 @@
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
-<!--    MyBatis 核心配置文件-->
+    <!-- 标签顺序
+    properties?,settings?,typeAliases?,
+    typeHandlers?,objectFactory?,objectWrapperFactory?,
+    reflectorFactory?,plugins?,environments?,
+    databaseIdProvider?,mappers?
+    -->
+    <!--MyBatis 核心配置文件-->
+    <!--引入properties文件,此时可以使用${}的方式访问属性值-->
+    <properties resource="jdbc.properties"/>
+    <!--设置别名-->
     <typeAliases>
+        <!--Teacher 类成员与Mysql teacher表属性对应-->
+        <typeAlias type="id" alias="id"></typeAlias>
+        <typeAlias type="tCode" alias="t_code"></typeAlias>
+        <typeAlias type="tName" alias="t_name"></typeAlias>
+        <typeAlias type="age" alias="age"></typeAlias>
+        <typeAlias type="graduate" alias="graduate"></typeAlias>
+        <typeAlias type="salary" alias="salary"></typeAlias>
+        <typeAlias type="cId" alias="c_id"></typeAlias>
         <package name="Pojo"/>
     </typeAliases>
+
     <!--设置连接数据库的环境-->
     <environments default="development">
+        <!--开发环境-->
         <environment id="development">
+            <!--设置事物管理方式 type=JDBC|MANAGED-->
+            <transactionManager type="JDBC"/>
+            <!--配置数据源 type=POOLED|UNPOOLED|JNDI-->
+            <dataSource type="POOLED">
+                <!--数据库连接-->
+                <property name="driver" value="${driver}"/>
+                <property name="url" value="${url}"/>
+                <property name="username" value="${user}"/>
+                <property name="password" value="${pwd}"/>
+            </dataSource>
+        </environment>
+        <!--test环境-->
+        <environment id="test">
             <transactionManager type="JDBC"/>
             <dataSource type="POOLED">
                 <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
-                <property name="url" value="jdbc:mysql://localhost:3306/mybatis_test?useUnicode=true&amp;characterEncoding=utf-8"/>
+                <property name="url"
+                          value="jdbc:mysql://localhost:3306/mybatis_test?useUnicode=true&amp;characterEncoding=utf-8"/>
                 <property name="username" value="root"/>
                 <property name="password" value="123456"/>
             </dataSource>
@@ -21,7 +54,7 @@
     </environments>
     <!--引入映射文件-->
     <mappers>
-<!--        <package name="mappers"/>-->
-        <mapper resource="mappers/TeacherMapper.xml"></mapper>
+        <!--<package name="mappers"/>-->
+        <mapper resource="mappers/TeacherMapper.xml"/>
     </mappers>
 </configuration>

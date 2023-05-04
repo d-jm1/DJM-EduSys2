@@ -4,24 +4,21 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5232c726-c4d7-4d02-9f8f-e2cee3c7564c" name="Default Changelist" comment="rename 图片文件名,add mapper">
-      <change afterPath="$PROJECT_DIR$/DJMEduSys2/src/main/resources/log4j.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/DJM-EduSys2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DJM-EduSys2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/251de1e0-6445-4e38-9946-b6159be8ab44.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/251de1e0-6445-4e38-9946-b6159be8ab44.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_5_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="5232c726-c4d7-4d02-9f8f-e2cee3c7564c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_plugins_maven_clean_plugin_2_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_plugins_maven_compiler_plugin_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_plugins_maven_deploy_plugin_maven_plugin_2_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_plugins_maven_install_plugin_maven_plugin_2_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_plugins_maven_jar_plugin_2_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_plugins_maven_resources_plugin_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_plugins_maven_site_plugin_maven_plugin_3_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_plugins_maven_surefire_plugin_maven_plugin_2_12_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DJMEduSys2/src/main/resources/jdbc.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DJMEduSys2/DJMEduSys2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DJMEduSys2/DJMEduSys2.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DJMEduSys2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DJMEduSys2/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DJMEduSys2/src/main/java/mappers/TeacherMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/DJMEduSys2/src/main/java/mappers/TeacherMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DJMEduSys2/src/main/resources/log4j.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DJMEduSys2/src/main/resources/log4j.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DJMEduSys2/src/main/resources/mappers/TeacherMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DJMEduSys2/src/main/resources/mappers/TeacherMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DJMEduSys2/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DJMEduSys2/src/main/resources/mybatis-config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DJMEduSys2/src/test/java/TeacherTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/DJMEduSys2/src/test/java/TeacherTest.java" afterDir="false" />
@@ -246,34 +243,36 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "E:/gsdx/软件工程/大一第二学期/java程序设计/1-课内实践任务-MyBatis阶段/DJM-EduSys",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Facets",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "project.propVCSSupport.Mappings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.TeacherTest.testSelectAll (1)">
-    <configuration name="TeacherTest.testInsert (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TeacherTest.testSelectGetAll">
+    <configuration name="TeacherTest.testDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DJM-EduSys2" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TeacherTest" />
-      <option name="METHOD_NAME" value="testInsert" />
+      <option name="METHOD_NAME" value="testDelete" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TeacherTest.testInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DJMEduSys2" />
+    <configuration name="TeacherTest.testInsert (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DJM-EduSys2" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TeacherTest" />
       <option name="METHOD_NAME" value="testInsert" />
@@ -292,11 +291,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TeacherTest.testSelectAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DJMEduSys2" />
+    <configuration name="TeacherTest.testSelectGetAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DJM-EduSys2" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TeacherTest" />
-      <option name="METHOD_NAME" value="testSelectAll" />
+      <option name="METHOD_NAME" value="testSelectGetAll" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -314,11 +313,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TeacherTest.testSelectGetAll" />
+        <item itemvalue="JUnit.TeacherTest.testDelete" />
         <item itemvalue="JUnit.TeacherTest.testSelectAll (1)" />
         <item itemvalue="JUnit.TeacherTest.testUpdate (1)" />
         <item itemvalue="JUnit.TeacherTest.testInsert (1)" />
-        <item itemvalue="JUnit.TeacherTest.testInsert" />
-        <item itemvalue="JUnit.TeacherTest.testSelectAll" />
       </list>
     </recent_temporary>
   </component>
@@ -352,7 +351,7 @@
       <workItem from="1683192976941" duration="2720000" />
       <workItem from="1683195717903" duration="1371000" />
       <workItem from="1683197234686" duration="2000" />
-      <workItem from="1683197349851" duration="1057000" />
+      <workItem from="1683197349851" duration="10106000" />
     </task>
     <task id="LOCAL-00001" summary="rename 图片文件名,add mapper">
       <created>1683107376239</created>
@@ -361,7 +360,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683107376239</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="添加了log4j.xml实现日志打印">
+      <created>1683198542961</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1683198542961</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -412,7 +418,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="rename 图片文件名,add mapper" />
-    <option name="LAST_COMMIT_MESSAGE" value="rename 图片文件名,add mapper" />
+    <MESSAGE value="添加了log4j.xml实现日志打印" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加了log4j.xml实现日志打印" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/MyBatis/MyBatis笔记.md">

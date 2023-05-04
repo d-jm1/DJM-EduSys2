@@ -13,6 +13,10 @@ import java.io.InputStream;
 import java.util.List;
 
 public class TeacherTest {
+    /**
+     * SqlSession 默认不自动提交事务
+     * 可以使用SqlSessionFactory.openSession(true) 使之自动提交
+     */
     private String res="mybatis-config.xml";
     private InputStream inputStream;
     private SqlSessionFactory sqlSessionFactory;
@@ -27,12 +31,6 @@ public class TeacherTest {
     }
 
     @Test
-    public void testSelectAll()throws IOException{
-        List<Teacher> teachers = teacherMapper.selectAll();
-        System.out.println(teachers);
-    }
-
-    @Test
     public void testInsert(){
         System.out.println(teacherMapper.insertOne());
         session.commit();
@@ -41,6 +39,21 @@ public class TeacherTest {
     public void testUpdate(){
         System.out.println(teacherMapper.updateOne());
         session.commit();
+    }
+    @Test
+    public void testDelete(){
+        System.out.println(teacherMapper.deleteOne());
+        session.commit();
+    }
+    @Test
+    public void testSelectAll()throws IOException{
+        List<Teacher> teachers = teacherMapper.selectAll();
+        System.out.println(teachers);
+    }
+    @Test
+    public  void testSelectGetAll() throws IOException{
+        List<Teacher> teachers= (List<Teacher>) teacherMapper.selectGetAll();
+        teachers.forEach(teacher-> System.out.println(teacher));
     }
     @After
     public void lastDo()throws IOException{

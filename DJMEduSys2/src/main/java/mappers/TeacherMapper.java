@@ -6,7 +6,9 @@ import java.util.List;
 import java.util.Map;
 
 public interface TeacherMapper {
-    List<Teacher> selectAll();
     int insertOne();
     int updateOne();
+    int deleteOne();
+    List<Teacher> selectAll();
+    List<Teacher> selectGetAll();
 }

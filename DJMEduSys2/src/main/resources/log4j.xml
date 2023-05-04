@@ -10,7 +10,7 @@
         </layout>
     </appender>
     <logger name="java.sql">
-        <level value="debug" />
+        <level value="debug" /> <!--五种日志级别 FATAL,ERROR,WARN,INFO,DEBUG -->
     </logger>
     <logger name="org.apache.ibatis">
         <level value="info" />
