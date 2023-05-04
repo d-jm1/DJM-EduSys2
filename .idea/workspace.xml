@@ -5,82 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5232c726-c4d7-4d02-9f8f-e2cee3c7564c" name="Default Changelist" comment="rename 图片文件名,add mapper">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/251de1e0-6445-4e38-9946-b6159be8ab44.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/251de1e0-6445-4e38-9946-b6159be8ab44/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/251de1e0-6445-4e38-9946-b6159be8ab44/storage_v2/_src_/schema/mysql.osA4Bg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/251de1e0-6445-4e38-9946-b6159be8ab44/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/251de1e0-6445-4e38-9946-b6159be8ab44/storage_v2/_src_/schema/sys.zb4BAA.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_5_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DJMEduSys2/DJMEduSys2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DJMEduSys2/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DJMEduSys2/src/main/java/Pojo/College.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DJMEduSys2/src/main/java/Pojo/Teacher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DJMEduSys2/src/main/java/mappers/CollegeMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DJMEduSys2/src/main/java/mappers/TeacherMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DJMEduSys2/src/main/resources/mappers/TeacherMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DJMEduSys2/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DJMEduSys2/src/test/java/TeacherTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DJMEduSys2/target/classes/Pojo/College.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DJMEduSys2/target/classes/Pojo/Teacher.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DJMEduSys2/target/classes/mappers/CollegeMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DJMEduSys2/target/classes/mappers/TeacherMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DJMEduSys2/target/classes/mappers/TeacherMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DJMEduSys2/target/classes/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DJMEduSys2/target/test-classes/TeacherTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MyBatis/imag/MyBatis下载.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MyBatis/imag/choose测试结果.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MyBatis/imag/dependency中的驱动.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MyBatis/imag/example测试结果.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MyBatis/imag/example的方法.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MyBatis/imag/foreach测试结果1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MyBatis/imag/foreach测试结果2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MyBatis/imag/mapper接口和mapper映射文件在同一包下.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MyBatis/imag/trim测试结果.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MyBatis/imag/分页测试结果.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MyBatis/imag/增删改测试结果1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MyBatis/imag/增删改测试结果2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MyBatis/imag/延迟加载测试1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MyBatis/imag/延迟加载测试2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MyBatis/imag/延迟加载测试3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MyBatis/imag/执行MBG插件的generate目标.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MyBatis/imag/插件中的驱动.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MyBatis/imag/逆向执行结果.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MyBatis/imag/配置分页插件.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MyBatis/imag/默认的类型别名1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MyBatis/imag/默认的类型别名2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DJMEduSys2/src/main/resources/log4j.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/DJM-EduSys2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DJM-EduSys2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/251de1e0-6445-4e38-9946-b6159be8ab44.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/251de1e0-6445-4e38-9946-b6159be8ab44.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_5_7.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyBatis/MyBatis笔记.md" beforeDir="false" afterPath="$PROJECT_DIR$/MyBatis/MyBatis笔记.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyBatis/Resources/MyBatis下载.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyBatis/Resources/choose测试结果.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyBatis/Resources/dependency中的驱动.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyBatis/Resources/example测试结果.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyBatis/Resources/example的方法.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyBatis/Resources/foreach测试结果1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyBatis/Resources/foreach测试结果2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyBatis/Resources/mapper接口和mapper映射文件在同一包下.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyBatis/Resources/trim测试结果.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyBatis/Resources/分页测试结果.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyBatis/Resources/增删改测试结果1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyBatis/Resources/增删改测试结果2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyBatis/Resources/延迟加载测试1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyBatis/Resources/延迟加载测试2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyBatis/Resources/延迟加载测试3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyBatis/Resources/执行MBG插件的generate目标.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyBatis/Resources/插件中的驱动.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyBatis/Resources/逆向执行结果.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyBatis/Resources/配置分页插件.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyBatis/Resources/默认的类型别名1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyBatis/Resources/默认的类型别名2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DJMEduSys2/DJMEduSys2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DJMEduSys2/DJMEduSys2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DJMEduSys2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DJMEduSys2/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DJMEduSys2/src/main/java/mappers/TeacherMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/DJMEduSys2/src/main/java/mappers/TeacherMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DJMEduSys2/src/main/resources/mappers/TeacherMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DJMEduSys2/src/main/resources/mappers/TeacherMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DJMEduSys2/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DJMEduSys2/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DJMEduSys2/src/test/java/TeacherTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/DJMEduSys2/src/test/java/TeacherTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DJMEduSys2/target/classes/Pojo/College.class" beforeDir="false" afterPath="$PROJECT_DIR$/DJMEduSys2/target/classes/Pojo/College.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DJMEduSys2/target/classes/Pojo/Teacher.class" beforeDir="false" afterPath="$PROJECT_DIR$/DJMEduSys2/target/classes/Pojo/Teacher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DJMEduSys2/target/classes/mappers/CollegeMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/DJMEduSys2/target/classes/mappers/CollegeMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DJMEduSys2/target/classes/mappers/TeacherMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/DJMEduSys2/target/classes/mappers/TeacherMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DJMEduSys2/target/classes/mappers/TeacherMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DJMEduSys2/target/classes/mappers/TeacherMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DJMEduSys2/target/classes/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DJMEduSys2/target/classes/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DJMEduSys2/target/test-classes/TeacherTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/DJMEduSys2/target/test-classes/TeacherTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,8 +101,10 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="C:\Users\djm\.m2\repository" />
-        <option name="userSettingsFile" value="D:\Program Files\JetBrains\IntelliJ IDEA 2019.1.3\apache-maven-3.8.7-bin\apache-maven-3.8.7\conf\settings.xml" />
+        <option name="localRepository" value="D:\Program Files\Java\maven_respository" />
+        <option name="mavenHome" value="D:/Program Files/Java/apache-maven-3.9.1" />
+        <option name="useMavenConfig" value="true" />
+        <option name="userSettingsFile" value="D:\Program Files\Java\apache-maven-3.9.1\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -183,7 +136,9 @@
     <option name="height" value="784" />
   </component>
   <component name="ProjectId" id="2PEtfZQScesimOq7qKGZKPDyny8" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -289,20 +244,54 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
-  </component>
-  <component name="RunManager">
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "E:/gsdx/软件工程/大一第二学期/java程序设计/1-课内实践任务-MyBatis阶段/DJM-EduSys",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Facets",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propVCSSupport.Mappings",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="JUnit.TeacherTest.testSelectAll (1)">
+    <configuration name="TeacherTest.testInsert (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DJM-EduSys2" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TeacherTest" />
+      <option name="METHOD_NAME" value="testInsert" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TeacherTest.testInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DJMEduSys2" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TeacherTest" />
+      <option name="METHOD_NAME" value="testInsert" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TeacherTest.testSelectAll (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DJM-EduSys2" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TeacherTest" />
+      <option name="METHOD_NAME" value="testSelectAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TeacherTest.testSelectAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DJMEduSys2" />
       <option name="PACKAGE_NAME" value="" />
@@ -313,8 +302,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TeacherTest.testUpdate (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DJM-EduSys2" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TeacherTest" />
+      <option name="METHOD_NAME" value="testUpdate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TeacherTest.testSelectAll (1)" />
+        <item itemvalue="JUnit.TeacherTest.testUpdate (1)" />
+        <item itemvalue="JUnit.TeacherTest.testInsert (1)" />
+        <item itemvalue="JUnit.TeacherTest.testInsert" />
         <item itemvalue="JUnit.TeacherTest.testSelectAll" />
       </list>
     </recent_temporary>
@@ -335,8 +338,30 @@
       <workItem from="1683025681325" duration="3388000" />
       <workItem from="1683029817985" duration="555000" />
       <workItem from="1683034181350" duration="938000" />
-      <workItem from="1683106772606" duration="483000" />
+      <workItem from="1683106772606" duration="1523000" />
+      <workItem from="1683112842167" duration="1387000" />
+      <workItem from="1683117938636" duration="3656000" />
+      <workItem from="1683182437574" duration="104000" />
+      <workItem from="1683182572289" duration="1305000" />
+      <workItem from="1683183921242" duration="1545000" />
+      <workItem from="1683185508322" duration="196000" />
+      <workItem from="1683185783788" duration="192000" />
+      <workItem from="1683186008206" duration="770000" />
+      <workItem from="1683186813813" duration="100000" />
+      <workItem from="1683186942822" duration="60000" />
+      <workItem from="1683192976941" duration="2720000" />
+      <workItem from="1683195717903" duration="1371000" />
+      <workItem from="1683197234686" duration="2000" />
+      <workItem from="1683197349851" duration="1057000" />
     </task>
+    <task id="LOCAL-00001" summary="rename 图片文件名,add mapper">
+      <created>1683107376239</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1683107376239</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">

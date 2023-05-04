@@ -1,7 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="mybatis_test@localhost">
-  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.32">
-    <root id="1"/>
+  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.48">
+    <root id="1">
+      <DefaultCasing>lower/lower</DefaultCasing>
+      <DefaultEngine>InnoDB</DefaultEngine>
+      <DefaultTmpEngine>InnoDB</DefaultTmpEngine>
+      <Grants>|root||root|localhost|ALTER|G
+|root||root|localhost|ALTER ROUTINE|G
+|root||root|localhost|CREATE|G
+|root||root|localhost|CREATE ROUTINE|G
+|root||root|localhost|CREATE TABLESPACE|G
+|root||root|localhost|CREATE TEMPORARY TABLES|G
+|root||root|localhost|CREATE USER|G
+|root||root|localhost|CREATE VIEW|G
+|root||root|localhost|DELETE|G
+|root||root|localhost|DROP|G
+|root||root|localhost|EVENT|G
+|root||root|localhost|EXECUTE|G
+|root||root|localhost|FILE|G
+|root||root|localhost|INDEX|G
+|root||root|localhost|INSERT|G
+|root||root|localhost|LOCK TABLES|G
+|root||root|localhost|PROCESS|G
+|root||root|localhost|REFERENCES|G
+|root||root|localhost|RELOAD|G
+|root||root|localhost|REPLICATION CLIENT|G
+|root||root|localhost|REPLICATION SLAVE|G
+|root||root|localhost|SELECT|G
+|root||root|localhost|SHOW DATABASES|G
+|root||root|localhost|SHOW VIEW|G
+|root||root|localhost|SHUTDOWN|G
+|root||mysql.session|localhost|SUPER|G
+|root||root|localhost|SUPER|G
+|root||root|localhost|TRIGGER|G
+|root||root|localhost|UPDATE|G
+|root||root|localhost|grant option|G
+performance_schema|schema||mysql.session|localhost|SELECT|G
+sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
+      <ServerVersion>5.7.25</ServerVersion>
+    </root>
     <collation id="2" parent="1" name="armscii8_bin">
       <Charset>armscii8</Charset>
     </collation>
@@ -740,65 +777,89 @@
     <schema id="233" parent="1" name="yggl">
       <CollationName>utf8_general_ci</CollationName>
     </schema>
-    <table id="234" parent="226" name="college"/>
-    <table id="235" parent="226" name="teacher">
-      <Comment>教师表</Comment>
+    <user id="234" parent="1" name="mysql.session">
+      <Host>localhost</Host>
+    </user>
+    <user id="235" parent="1" name="mysql.sys">
+      <Host>localhost</Host>
+    </user>
+    <user id="236" parent="1" name="root">
+      <Host>localhost</Host>
+    </user>
+    <table id="237" parent="226" name="college">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
     </table>
-    <column id="236" parent="234" name="id">
-      <DataType>int(8)|0s</DataType>
+    <table id="238" parent="226" name="teacher">
+      <Comment>教师表</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <column id="239" parent="237" name="id">
+      <DasType>int(8)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="237" parent="234" name="college_name">
-      <DataType>varchar(20)|0s</DataType>
+    <column id="240" parent="237" name="college_name">
+      <DasType>varchar(20)|0s</DasType>
       <Position>2</Position>
     </column>
-    <key id="238" parent="234" name="PRIMARY">
+    <index id="241" parent="237" name="PRIMARY">
       <ColNames>id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="242" parent="237" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="239" parent="235" name="id">
+    <column id="243" parent="238" name="id">
+      <AutoIncrement>25</AutoIncrement>
       <Comment>教师id</Comment>
-      <DataType>int(8)|0s</DataType>
+      <DasType>int(8)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="240" parent="235" name="t_code">
-      <DataType>varchar(10)|0s</DataType>
+    <column id="244" parent="238" name="t_code">
+      <DasType>varchar(10)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="241" parent="235" name="t_name">
+    <column id="245" parent="238" name="t_name">
       <Comment>教师姓名</Comment>
-      <DataType>varchar(10)|0s</DataType>
+      <DasType>varchar(10)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="242" parent="235" name="age">
+    <column id="246" parent="238" name="age">
       <Comment>年龄</Comment>
-      <DataType>int(3)|0s</DataType>
+      <DasType>int(3)|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="243" parent="235" name="graduate">
+    <column id="247" parent="238" name="graduate">
       <Comment>毕业院校</Comment>
-      <DataType>varchar(50)|0s</DataType>
+      <DasType>varchar(50)|0s</DasType>
       <Position>5</Position>
     </column>
-    <column id="244" parent="235" name="salary">
+    <column id="248" parent="238" name="salary">
       <Comment>薪水</Comment>
-      <DataType>int(10)|0s</DataType>
+      <DasType>int(10)|0s</DasType>
       <Position>6</Position>
     </column>
-    <column id="245" parent="235" name="c_id">
+    <column id="249" parent="238" name="c_id">
       <Comment>所属学院id</Comment>
-      <DataType>int(8)|0s</DataType>
+      <DasType>int(8)|0s</DasType>
       <Position>7</Position>
     </column>
-    <key id="246" parent="235" name="PRIMARY">
+    <index id="250" parent="238" name="PRIMARY">
       <ColNames>id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="251" parent="238" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
   </database-model>
 </dataSource>

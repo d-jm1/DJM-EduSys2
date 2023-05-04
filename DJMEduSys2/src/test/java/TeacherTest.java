@@ -31,6 +31,17 @@ public class TeacherTest {
         List<Teacher> teachers = teacherMapper.selectAll();
         System.out.println(teachers);
     }
+
+    @Test
+    public void testInsert(){
+        System.out.println(teacherMapper.insertOne());
+        session.commit();
+    }
+    @Test
+    public void testUpdate(){
+        System.out.println(teacherMapper.updateOne());
+        session.commit();
+    }
     @After
     public void lastDo()throws IOException{
         session.close();

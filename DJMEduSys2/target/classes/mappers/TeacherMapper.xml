@@ -3,8 +3,17 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="mappers.TeacherMapper">
-    <!--int insertUser();-->
+    <insert id="insertOne">
+        insert  into teacher values(null,"t021","李白",50,"浙江大学",100000,3)
+    </insert>
+    <update id="updateOne">
+        update teacher  set t_name="李白",graduate="浙江大学" where id=21
+    </update>
+
     <select id="selectAll" resultType="Pojo.Teacher">
 		select * from teacher;
 	</select>
+    
+
+
 </mapper>
