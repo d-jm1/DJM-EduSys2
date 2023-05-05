@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataSource name="mybatis_test@localhost">
+<dataSource name="mybatis_test@localhost 2">
   <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.48">
     <root id="1">
       <DefaultCasing>lower/lower</DefaultCasing>
@@ -777,13 +777,13 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     <schema id="233" parent="1" name="yggl">
       <CollationName>utf8_general_ci</CollationName>
     </schema>
-    <user id="234" parent="1" name="root">
+    <user id="234" parent="1" name="mysql.session">
       <Host>localhost</Host>
     </user>
-    <user id="235" parent="1" name="mysql.session">
+    <user id="235" parent="1" name="mysql.sys">
       <Host>localhost</Host>
     </user>
-    <user id="236" parent="1" name="mysql.sys">
+    <user id="236" parent="1" name="root">
       <Host>localhost</Host>
     </user>
     <table id="237" parent="226" name="college">

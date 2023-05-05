@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Mappers.ParameterMapper">
+
+
+    <select id="selectAll" resultType="Pojo.Teacher">
+        select *
+        from teacher;
+    </select>
+
+    <select id="getTeacherById" resultType="Pojo.Teacher">
+        select *
+        from teacher
+        where id = #{id};
+    </select>
+
+    <!--
+        mybatis 获取参数的两种方式:${},#{}
+
+        1.mapper接口方法为单个字面量
+            1.1 ${} 本质是字符串拼接
+            1.2 #{} 本质是占位符赋值
+        2.mapper接口方法为多个字面量
+            2.1 @param注解
+            2.2 Map
+            2.3 实体类类型
+    -->
+    <!--2.1 使用默认参数名,语义化差-->
+    <select id="getTeacherByAgeAndSalaryWithDefaultParam" resultType="Pojo.Teacher">
+        select *
+        from teacher
+        where age &lt; #{param1}
+          and salary &gt; #{param2};
+    </select>
+
+    <!--2.1 使用自定义参数名,语义化好 使用 接口.方法名(@param(参数名)数据类型 参数名,...){}-->
+    <select id="getTeacherByAgeAndSalaryWithParam" resultType="Pojo.Teacher">
+        select *
+        from teacher
+        where age &lt; #{age}
+          and salary &gt; #{salary};
+    </select>
+
+    <!--2.2 Map-->
+    <select id="getTeacherByAgeAndSalaryWithMap" resultType="Pojo.Teacher">
+        select *
+        from teacher
+        where age &lt; #{age}
+          and salary &gt; #{salary};
+    </select>
+    <!--2.3 实体类型-->
+    <select id="getTeacherByAgeAndSalaryWithTeacher" resultType="Pojo.Teacher">
+        select *
+        from teacher
+        where age &lt; #{age}
+          and salary &gt; #{salary};
+    </select>
+    <!--2.3 实体类型-->
+    <insert id="insertTeacher" keyColumn="id">
+        insert into teacher
+        values (null, #{tCode}, #{tName}, #{age}, #{graduate}, #{salary}, #{cId});
+    </insert>
+</mapper>

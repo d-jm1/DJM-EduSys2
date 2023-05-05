@@ -22,7 +22,7 @@
         <!--<typeAlias type="graduate" alias="graduate"></typeAlias>-->
         <!--<typeAlias type="salary" alias="salary"></typeAlias>-->
         <!--<typeAlias type="cId" alias="c_id"></typeAlias>-->
-        <package name="Pojo"/>
+        <package name=""/>
     </typeAliases>
 
     <!--设置连接数据库的环境-->
@@ -55,6 +55,6 @@
     <!--引入映射文件-->
     <mappers>
         <!--<package name="mappers"/>-->
-        <mapper resource="mappers/TeacherMapper.xml"/>
+        <mapper resource="Mappers/ParameterMapper.xml"/>
     </mappers>
 </configuration>
