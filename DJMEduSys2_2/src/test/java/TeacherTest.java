@@ -1,4 +1,5 @@
 import Mappers.ParameterMapper;
+import Mappers.SelectMapper;
 import Pojo.Teacher;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -89,6 +90,33 @@ public class TeacherTest {
         int i = parameterMapper.insertTeacher(new Teacher("t001","李白",45,"中国科技大学",2000,0010));
         System.out.println(i);
         session.commit();
+    }
+    @Test
+    public void testGetTeacherByIdInSelectMapper()throws IOException{
+        SelectMapper selectMapper = session.getMapper(SelectMapper.class);
+        Teacher teacher = selectMapper.getTeacherById(14);
+        System.out.println(teacher);
+    }
+
+    @Test
+    public void testGetCountInSelectMapper()throws IOException{
+        SelectMapper selectMapper = session.getMapper(SelectMapper.class);
+        int count = selectMapper.getCount();
+        System.out.println(count);
+    }
+
+    @Test
+    public void testGetTeacherByIdToMap(){
+        SelectMapper selectMapper = session.getMapper(SelectMapper.class);
+        Map<String, Object> teacher = selectMapper.getTeacherByIdToMap(12);
+        System.out.println(teacher);
+    }
+
+    @Test
+    public void testGetTeacherToMap(){
+        SelectMapper selectMapper = session.getMapper(SelectMapper.class);
+        Map<String, Object> teacher = selectMapper.getTeacherToMap();
+        System.out.println(teacher);
     }
     @After
     public void lastDo() throws IOException{

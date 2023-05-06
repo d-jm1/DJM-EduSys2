@@ -56,5 +56,6 @@
     <mappers>
         <!--<package name="mappers"/>-->
         <mapper resource="Mappers/ParameterMapper.xml"/>
+        <mapper resource="Mappers/SelectMapper.xml"/>
     </mappers>
 </configuration>
