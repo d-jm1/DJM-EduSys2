@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5232c726-c4d7-4d02-9f8f-e2cee3c7564c" name="Default Changelist" comment="添加模板文件,使用 占位符/注解/Map/实体类型 实现参数获取">
-      <change afterPath="$PROJECT_DIR$/DJMEduSys2_2/src/main/java/Mappers/SelectMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DJMEduSys2_2/src/main/resources/Mappers/SelectMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f8e205c5-250d-4d97-ab9c-27957bb1a6aa.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f8e205c5-250d-4d97-ab9c-27957bb1a6aa/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f8e205c5-250d-4d97-ab9c-27957bb1a6aa/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f8e205c5-250d-4d97-ab9c-27957bb1a6aa/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f8e205c5-250d-4d97-ab9c-27957bb1a6aa/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
+    <list default="true" id="5232c726-c4d7-4d02-9f8f-e2cee3c7564c" name="Default Changelist" comment="模糊查询,批量删除,动态表名,insert同时获取主键值">
+      <change afterPath="$PROJECT_DIR$/DJMEduSys2_2/src/main/java/Mappers/SQLMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DJMEduSys2_2/src/main/resources/Mappers/SQLMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DJMEduSys2_2/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DJMEduSys2_2/src/main/resources/mybatis-config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DJMEduSys2_2/src/test/java/TeacherTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/DJMEduSys2_2/src/test/java/TeacherTest.java" afterDir="false" />
@@ -255,52 +250,52 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="JUnit.TeacherTest.testGetTeacherToMap">
-    <configuration name="TeacherTest.testGetCountInSelectMapper" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TeacherTest.testInsertTeacherWithGenerateKey">
+    <configuration name="TeacherTest.testDeleteMore" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DJMEduSys2_2" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TeacherTest" />
-      <option name="METHOD_NAME" value="testGetCountInSelectMapper" />
+      <option name="METHOD_NAME" value="testDeleteMore" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TeacherTest.testGetTeacherByIdInSelectMapper" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TeacherTest.testGetTeacherByLike3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DJMEduSys2_2" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TeacherTest" />
-      <option name="METHOD_NAME" value="testGetTeacherByIdInSelectMapper" />
+      <option name="METHOD_NAME" value="testGetTeacherByLike3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TeacherTest.testGetTeacherByIdToMap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TeacherTest.testGetTeacherByLikeWithConcat" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DJMEduSys2_2" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TeacherTest" />
-      <option name="METHOD_NAME" value="testGetTeacherByIdToMap" />
+      <option name="METHOD_NAME" value="testGetTeacherByLikeWithConcat" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TeacherTest.testGetTeacherToMap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TeacherTest.testInsertTeacherWithGenerateKey" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DJMEduSys2_2" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TeacherTest" />
-      <option name="METHOD_NAME" value="testGetTeacherToMap" />
+      <option name="METHOD_NAME" value="testInsertTeacherWithGenerateKey" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TeacherTest.testInsertTeacher" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TeacherTest.testSelectTable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DJMEduSys2_2" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TeacherTest" />
-      <option name="METHOD_NAME" value="testInsertTeacher" />
+      <option name="METHOD_NAME" value="testSelectTable" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -308,11 +303,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TeacherTest.testGetTeacherToMap" />
-        <item itemvalue="JUnit.TeacherTest.testGetTeacherByIdToMap" />
-        <item itemvalue="JUnit.TeacherTest.testGetCountInSelectMapper" />
-        <item itemvalue="JUnit.TeacherTest.testGetTeacherByIdInSelectMapper" />
-        <item itemvalue="JUnit.TeacherTest.testInsertTeacher" />
+        <item itemvalue="JUnit.TeacherTest.testInsertTeacherWithGenerateKey" />
+        <item itemvalue="JUnit.TeacherTest.testSelectTable" />
+        <item itemvalue="JUnit.TeacherTest.testDeleteMore" />
+        <item itemvalue="JUnit.TeacherTest.testGetTeacherByLike3" />
+        <item itemvalue="JUnit.TeacherTest.testGetTeacherByLikeWithConcat" />
       </list>
     </recent_temporary>
   </component>
@@ -348,7 +343,8 @@
       <workItem from="1683197234686" duration="2000" />
       <workItem from="1683197349851" duration="10367000" />
       <workItem from="1683261327584" duration="12501000" />
-      <workItem from="1683341880594" duration="5209000" />
+      <workItem from="1683341880594" duration="5749000" />
+      <workItem from="1683363062480" duration="4220000" />
     </task>
     <task id="LOCAL-00001" summary="rename 图片文件名,add mapper">
       <created>1683107376239</created>
@@ -378,7 +374,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683288520897</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="添加SelectMapper on 2_2, 查询结果接收的几种形式">
+      <created>1683362817700</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1683362817700</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -432,7 +435,8 @@
     <MESSAGE value="添加了log4j.xml实现日志打印" />
     <MESSAGE value="添加资源绑定文件jdbc.properties,完善mybatis-config.xml配置文件" />
     <MESSAGE value="添加模板文件,使用 占位符/注解/Map/实体类型 实现参数获取" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加模板文件,使用 占位符/注解/Map/实体类型 实现参数获取" />
+    <MESSAGE value="添加SelectMapper on 2_2, 查询结果接收的几种形式" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加SelectMapper on 2_2, 查询结果接收的几种形式" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/MyBatis/MyBatis笔记.md">

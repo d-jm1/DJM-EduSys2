@@ -1,4 +1,5 @@
 import Mappers.ParameterMapper;
+import Mappers.SQLMapper;
 import Mappers.SelectMapper;
 import Pojo.Teacher;
 import org.apache.ibatis.io.Resources;
@@ -11,6 +12,8 @@ import org.junit.Test;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.security.PublicKey;
+import java.text.Format;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -117,6 +120,55 @@ public class TeacherTest {
         SelectMapper selectMapper = session.getMapper(SelectMapper.class);
         Map<String, Object> teacher = selectMapper.getTeacherToMap();
         System.out.println(teacher);
+    }
+
+//    模糊查询
+    @Test
+    public void testGetTeacherByLike(){
+        SQLMapper sqlMapper = session.getMapper(SQLMapper.class);
+        List<Teacher> teachers = sqlMapper.getTeacherByLike("科技大学");
+        teachers.forEach(teacher -> {
+            System.out.println(teacher);
+        });
+    }
+    @Test
+    public void testGetTeacherByLikeWithConcat(){
+        SQLMapper sqlMapper = session.getMapper(SQLMapper.class);
+        List<Teacher> teachers = sqlMapper.getTeacherByLikeWithConcat("科技大学");
+        teachers.forEach(teacher -> {
+            System.out.println(teacher);
+        });
+    }
+
+    @Test
+    public void testGetTeacherByLike3(){
+        SQLMapper sqlMapper = session.getMapper(SQLMapper.class);
+        List<Teacher> teachers = sqlMapper.getTeacherByLike3("科技大学");
+        teachers.forEach(teacher -> {
+            System.out.println(teacher);
+        });
+    }
+    @Test
+    public void testDeleteMore(){
+        SQLMapper sqlMapper = session.getMapper(SQLMapper.class);
+        System.out.println(String.format("%d",sqlMapper.deleteMore("1,2,3,4")));
+    }
+
+    @Test
+    public void testSelectTable(){
+        SQLMapper sqlMapper = session.getMapper(SQLMapper.class);
+        Map<String, Object> teachers = sqlMapper.selectTable("teacher");
+        System.out.println(teachers.get(1));
+    }
+
+    @Test
+    public void testInsertTeacherWithGenerateKey(){
+        SQLMapper sqlMapper = session.getMapper(SQLMapper.class);
+        Teacher teacher=new Teacher();
+        teacher.setTName("王安石");
+        sqlMapper.insertTeacherWithGenerateKey(teacher);
+        System.out.println(teacher.getId());
+        session.commit();
     }
     @After
     public void lastDo() throws IOException{

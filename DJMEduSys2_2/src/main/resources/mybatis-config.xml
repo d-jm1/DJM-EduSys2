@@ -54,8 +54,9 @@
     </environments>
     <!--引入映射文件-->
     <mappers>
-        <!--<package name="mappers"/>-->
-        <mapper resource="Mappers/ParameterMapper.xml"/>
-        <mapper resource="Mappers/SelectMapper.xml"/>
+        <package name="Mappers"/>
+<!--        <mapper resource="Mappers/ParameterMapper.xml"/>-->
+<!--        <mapper resource="Mappers/SelectMapper.xml"/>-->
+<!--        <mapper resource="Mappers/SQLMapper.xml"/>-->
     </mappers>
 </configuration>

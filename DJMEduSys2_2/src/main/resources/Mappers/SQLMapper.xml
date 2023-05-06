@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="Mappers.SQLMapper">
+
+
+    <select id="getTeacherByLike" resultType="Pojo.Teacher">
+        select *
+        from teacher
+        where graduate like '%${graduate}%';
+    </select>
+    <select id="getTeacherByLikeWithConcat" resultType="Pojo.Teacher">
+        select *
+        from teacher
+        where graduate like concat('%', #{graduate}, '%');
+    </select>
+    <select id="getTeacherByLike3" resultType="Pojo.Teacher">
+        select *
+        from teacher
+        where graduate like "%"#{graduate}"%";
+    </select>
+
+
+    <delete id="deleteMore">
+        delete
+        from teacher
+        where id in (${ids});
+    </delete>
+
+    <select id="selectTable" resultType="java.util.Map">
+        select *
+        from ${tableName};
+    </select>
+    <insert id="insertTeacherWithGenerateKey" useGeneratedKeys="true" keyProperty="id">
+        insert into teacher
+        values (#{id}, #{tCode}, #{tName}, #{age}, #{graduate}, #{salary}, #{cId})
+    </insert>
+</mapper>
